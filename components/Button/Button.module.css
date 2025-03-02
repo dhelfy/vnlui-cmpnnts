@@ -1,0 +1,18 @@
+.button {
+    border-radius: 8px;
+    border: 0.3px solid;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dark {
+    border-color: #616161;
+    background-color: #151515;
+    color: #fff;
+}
+
+.light {
+    border-color: #adadad;
+    background-color: #f0f0f0;
+    color: #000;
+}
