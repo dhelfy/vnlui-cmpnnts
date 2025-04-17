@@ -1,10 +1,10 @@
 import styles from "./Button.module.css";
 
-export const Button = ({ children, theme = "dark", className, ref, ...props }) => {
+export const Button = ({ children, className, ref, ...props }) => {
     return (
         <button
-            ref={ref} 
-            className={`${styles.button} ${styles[theme]} ${className}`} 
+            ref={ref}
+            className={`${styles.button} ${className}`}
             {...props}
         >
             {children}

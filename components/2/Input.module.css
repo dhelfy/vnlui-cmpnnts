@@ -1,0 +1,31 @@
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #616161;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s;
+    color: #fff;
+    background-color: #151515;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.input.error {
+    border-color: #ff4444;
+}
+
+.input.error:focus {
+    border-color: #fff;
+}
