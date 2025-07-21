@@ -1,0 +1,32 @@
+.accordion {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 600;
+  display: flex;
+  min-width: 124px;
+  max-width: fit-content;
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 16px;
+}
+
+.content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.content.open {
+  max-height: fit-content;
+  opacity: 1;
+}

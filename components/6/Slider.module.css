@@ -1,0 +1,24 @@
+.slider {
+  width: 150px;
+  height: 8px;
+  background-color: #151515;
+  border-radius: 5px;
+  position: relative;
+}
+
+.percentBar {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.setter {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  cursor: pointer;
+}

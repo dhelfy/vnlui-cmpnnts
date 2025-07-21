@@ -1,0 +1,18 @@
+.loader {
+  color: #fff;
+  animation: blink 3.3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

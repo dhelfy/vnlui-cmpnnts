@@ -46,4 +46,5 @@
   overflow: hidden;
   padding: 4px;
   background-color: #151515;
+  z-index: 1;
 }

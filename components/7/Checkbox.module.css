@@ -1,0 +1,53 @@
+.checkbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: fit-content;
+}
+
+.input {
+  appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background: #151515;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 0.2);
+  border-radius: 4px;
+  border: 1px solid #616161;
+  transition: 300ms;
+}
+
+.input::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.47136 10.0286L12.6666 3.83337L13.6094 4.77618L6.47136 11.9143L2.66663 8.10952L3.60943 7.16671L6.47136 10.0286Z' fill='white'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+}
+
+.input:checked::after {
+  width: 16px;
+  height: 16px;
+}
+
+.input:checked {
+  border: 1px solid #fff;
+}
+
+.input:disabled {
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.input:disabled::after {
+  filter: grayscale(100%);
+}
+
+.label {
+  color: #fff;
+  font-size: 16px;
+}
