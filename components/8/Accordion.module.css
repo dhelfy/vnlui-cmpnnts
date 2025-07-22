@@ -11,6 +11,7 @@
   min-width: 124px;
   max-width: fit-content;
   justify-content: space-between;
+  align-items: center;
   display: flex;
   cursor: pointer;
 }
